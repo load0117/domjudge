@@ -1,0 +1,5 @@
+open /etc/default/grub (if cloud, open /etc/default/grub.d)
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet cgroup_enable=memory swapaccount=1"
+
+run `sudo update-grub` and reboot
